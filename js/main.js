@@ -16,7 +16,8 @@ function run() {
     //btnTheme.classList.add("hidden");
     //monthOfBirth.classList.add("hidden");
     bodyEl.style.background = "url(maldives2.webp) no-repeat";
-    bodyEl.style.backgroundSize = "100%";
+    bodyEl.style.backgroundColor = "skyblue";
+    bodyEl.style.backgroundSize = "100% 100vh";
     let msg = new SpeechSynthesisUtterance();
     let voices = window.speechSynthesis.getVoices();
     msg.voice = voices[1];
@@ -26,14 +27,15 @@ function run() {
     msg.lang = "en-US";
     msg.text = "Your next vacation city is maldives";
     speechSynthesis.speak(msg);
-  }
-}
-/*else if (monthOfBirth === "february") {
+  } else if (monthOfBirth === "february") {
+    imgTheme.classList.add("hidden");
+    textTheme.classList.add("hidden");
     bodyEl.style.background = "url(marrakech.jpg) no-repeat";
+    bodyEl.style.backgroundColor = "skyblue";
     bodyEl.style.backgroundSize = "100% 100vh";
     let msg = new SpeechSynthesisUtterance();
     let voices = window.speechSynthesis.getVoices();
-    msg.voice = voices[1];
+    msg.voice = voices[3];
     msg.volume = 1;
     msg.rate = 1;
     msg.pitch = 2;
@@ -41,7 +43,10 @@ function run() {
     msg.text = "Your next vacation city is marrakech";
     speechSynthesis.speak(msg);
   } else if (monthOfBirth === "march") {
+    imgTheme.classList.add("hidden");
+    textTheme.classList.add("hidden");
     bodyEl.style.background = "url(parisstock.jpg) no-repeat";
+    bodyEl.style.backgroundColor = "skyblue";
     bodyEl.style.backgroundSize = "100% 100vh";
     let msg = new SpeechSynthesisUtterance();
     let voices = window.speechSynthesis.getVoices();
@@ -53,11 +58,14 @@ function run() {
     msg.text = "Your next vacation city is paris";
     speechSynthesis.speak(msg);
   } else if (monthOfBirth === "april") {
+    imgTheme.classList.add("hidden");
+    textTheme.classList.add("hidden");
     bodyEl.style.background = "url(dubaistock.webp) no-repeat";
+    bodyEl.style.backgroundColor = "skyblue";
     bodyEl.style.backgroundSize = "100% 100vh";
     let msg = new SpeechSynthesisUtterance();
     let voices = window.speechSynthesis.getVoices();
-    msg.voice = voices[1];
+    msg.voice = voices[2];
     msg.volume = 1;
     msg.rate = 1;
     msg.pitch = 2;
@@ -65,7 +73,10 @@ function run() {
     msg.text = "Your next vacation city is dubai";
     speechSynthesis.speak(msg);
   } else if (monthOfBirth === "may") {
-    bodyEl.style.background = "url(maldives2.webp) no-repeat";
+    imgTheme.classList.add("hidden");
+    textTheme.classList.add("hidden");
+    bodyEl.style.background = "url(montreal2.jpg) no-repeat";
+    bodyEl.style.backgroundColor = "skyblue";
     bodyEl.style.backgroundSize = "100% 100vh";
     let msg = new SpeechSynthesisUtterance();
     let voices = window.speechSynthesis.getVoices();
@@ -74,10 +85,13 @@ function run() {
     msg.rate = 1;
     msg.pitch = 2;
     msg.lang = "en-US";
-    msg.text = "Your next vacation city is maldives";
+    msg.text = "Your next vacation city is montreal!";
     speechSynthesis.speak(msg);
   } else if (monthOfBirth === "june") {
-    bodyEl.style.background = "url(maldives2.webp) no-repeat";
+    imgTheme.classList.add("hidden");
+    textTheme.classList.add("hidden");
+    bodyEl.style.background = "url(bali2.jpg) no-repeat";
+    bodyEl.style.backgroundColor = "skyblue";
     bodyEl.style.backgroundSize = "100% 100vh";
     let msg = new SpeechSynthesisUtterance();
     let voices = window.speechSynthesis.getVoices();
@@ -86,10 +100,13 @@ function run() {
     msg.rate = 1;
     msg.pitch = 2;
     msg.lang = "en-US";
-    msg.text = "Your next vacation city is maldives";
+    msg.text = "Your next vacation city is Bali!";
     speechSynthesis.speak(msg);
   } else if (monthOfBirth === "july") {
-    bodyEl.style.background = "url(maldives2.webp) no-repeat";
+    imgTheme.classList.add("hidden");
+    textTheme.classList.add("hidden");
+    bodyEl.style.background = "url(hawaii3.jpg) no-repeat";
+    bodyEl.style.backgroundColor = "skyblue";
     bodyEl.style.backgroundSize = "100% 100vh";
     let msg = new SpeechSynthesisUtterance();
     let voices = window.speechSynthesis.getVoices();
@@ -98,10 +115,13 @@ function run() {
     msg.rate = 1;
     msg.pitch = 2;
     msg.lang = "en-US";
-    msg.text = "Your next vacation city is maldives";
+    msg.text = "Your next vacation city is Hawai";
     speechSynthesis.speak(msg);
   } else if (monthOfBirth === "august") {
-    bodyEl.style.background = "url(maldives2.webp) no-repeat";
+    imgTheme.classList.add("hidden");
+    textTheme.classList.add("hidden");
+    bodyEl.style.background = "url(singapore4.jpg) no-repeat";
+    bodyEl.style.backgroundColor = "skyblue";
     bodyEl.style.backgroundSize = "100% 100vh";
     let msg = new SpeechSynthesisUtterance();
     let voices = window.speechSynthesis.getVoices();
@@ -110,10 +130,13 @@ function run() {
     msg.rate = 1;
     msg.pitch = 2;
     msg.lang = "en-US";
-    msg.text = "Your next vacation city is maldives";
+    msg.text = "Your next vacation city is singapore";
     speechSynthesis.speak(msg);
   } else if (monthOfBirth === "september") {
-    bodyEl.style.background = "url(maldives2.webp) no-repeat";
+    imgTheme.classList.add("hidden");
+    textTheme.classList.add("hidden");
+    bodyEl.style.background = "url(rome.jpg) no-repeat";
+    bodyEl.style.backgroundColor = "skyblue";
     bodyEl.style.backgroundSize = "100% 100vh";
     let msg = new SpeechSynthesisUtterance();
     let voices = window.speechSynthesis.getVoices();
@@ -122,10 +145,13 @@ function run() {
     msg.rate = 1;
     msg.pitch = 2;
     msg.lang = "en-US";
-    msg.text = "Your next vacation city is maldives";
+    msg.text = "Your next vacation city is rome";
     speechSynthesis.speak(msg);
   } else if (monthOfBirth === "october") {
-    bodyEl.style.background = "url(maldives2.webp) no-repeat";
+    imgTheme.classList.add("hidden");
+    textTheme.classList.add("hidden");
+    bodyEl.style.background = "url(mykonos3.jpg) no-repeat";
+    bodyEl.style.backgroundColor = "skyblue";
     bodyEl.style.backgroundSize = "100% 100vh";
     let msg = new SpeechSynthesisUtterance();
     let voices = window.speechSynthesis.getVoices();
@@ -134,10 +160,13 @@ function run() {
     msg.rate = 1;
     msg.pitch = 2;
     msg.lang = "en-US";
-    msg.text = "Your next vacation city is maldives";
+    msg.text = "Your next vacation city is mykonos";
     speechSynthesis.speak(msg);
   } else if (monthOfBirth === "november") {
-    bodyEl.style.background = "url(maldives2.webp) no-repeat";
+    imgTheme.classList.add("hidden");
+    textTheme.classList.add("hidden");
+    bodyEl.style.background = "url(peru.jpg) no-repeat";
+    bodyEl.style.backgroundColor = "skyblue";
     bodyEl.style.backgroundSize = "100% 100vh";
     let msg = new SpeechSynthesisUtterance();
     let voices = window.speechSynthesis.getVoices();
@@ -146,10 +175,13 @@ function run() {
     msg.rate = 1;
     msg.pitch = 2;
     msg.lang = "en-US";
-    msg.text = "Your next vacation city is maldives";
+    msg.text = "Your next vacation city is peru";
     speechSynthesis.speak(msg);
   } else if (monthOfBirth === "december") {
-    bodyEl.style.background = "url(maldives2.webp) no-repeat";
+    imgTheme.classList.add("hidden");
+    textTheme.classList.add("hidden");
+    bodyEl.style.background = "url(turksandcaicos.jpg) no-repeat";
+    bodyEl.style.backgroundColor = "skyblue";
     bodyEl.style.backgroundSize = "100% 100vh";
     let msg = new SpeechSynthesisUtterance();
     let voices = window.speechSynthesis.getVoices();
@@ -158,10 +190,10 @@ function run() {
     msg.rate = 1;
     msg.pitch = 2;
     msg.lang = "en-US";
-    msg.text = "Your next vacation city is maldives";
+    msg.text = "Your next vacation city is turks and caicos";
     speechSynthesis.speak(msg);
   }
-}*/
+}
 
 //let voices = window.speechSynthesis.getVoices();
 //console.log(voices);
