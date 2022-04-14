@@ -23,12 +23,14 @@
 
 body {
   width: 100%;
-  height: 100%;
+  max-height: 100%;
   overflow: hidden;
   text-align: center;
-  background-color: rgba(0, 0, 255, 0.8);
-  position: relative;
-  top: 50px;
+  background-color: rgb(2, 2, 49);
+  position: absolute;
+  top: 15%;
+  bottom: 15%;
+  font-family: "Neuton", serif;
 }
 
 /******************************************
@@ -37,33 +39,102 @@ body {
 header {
 }
 h1 {
-  font-size: 2rem;
-  line-height: 3rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.3rem;
+  color: antiquewhite;
+}
+.wrap {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 482px;
+  right: 0;
+  top: 0.5rem;
+  width: 400px;
+  height: 30px;
+  background-color: rgb(83, 83, 248);
+  font-size: 1em;
+  border-radius: 0.2em;
+  color: white;
+  box-shadow: 0.1em 0.1em 0em rgb(57, 57, 163);
+  margin-right: 100px;
+}
+.fa-search {
+  padding-left: 5px;
+  position: relative;
+  top: 7px;
+}
+input {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: rgb(83, 83, 248);
   color: white;
 }
-form input {
-  width: 510px;
-  position: relative;
-  top: 10px;
-  padding: 5px 0;
-  outline: none;
-  border: none;
-  background-color: rgb(143, 181, 212);
-}
 ::placeholder {
-  color: black;
+  color: rgb(2, 2, 49);
 }
 
 a {
-  padding: 10px 50px;
+  padding: 5px 50px;
   text-decoration: none;
-  color: black;
-  background-color: lime;
+  font-weight: 500;
+  color: white;
+  background-color: rgb(2, 2, 92);
   border-radius: 5px;
-  box-shadow: 5px rgb(21, 243, 21), -5px -5px limegreen;
+  /*box-shadow: 5px rgb(149, 149, 167), -5px -5px rgb(83, 83, 248);*/
   position: relative;
   top: 30px;
   font-size: 1.2rem;
+}
+img {
+  width: 25rem;
+}
+@media all and (max-width: 500px) {
+  img {
+    width: 70%;
+  }
+  h1 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  .wrap {
+    width: 70%;
+    left: 15%;
+  }
+  a {
+    padding: 0.4% 10%;
+    font-size: 1rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 800px) {
+  img {
+    width: 55%;
+  }
+  .wrap {
+    width: 55%;
+    left: 22%;
+  }
+  body {
+    top: 10%;
+    bottom: 10%;
+  }
+}
+@media (min-width: 801px) and (max-width: 1120px) {
+  img {
+    width: 40%;
+  }
+  .wrap {
+    width: 40%;
+    left: 30%;
+  }
+  body {
+    top: 10%;
+    bottom: 10%;
+  }
 }
 
 .hidden {
