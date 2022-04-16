@@ -1,6 +1,6 @@
 "use strict";
 
-const bodyEl = document.querySelector("body");
+const bodyEl = document.querySelector(".container");
 const imgTheme = document.querySelector(".themeImg");
 const textTheme = document.querySelector("h1");
 let msg = new SpeechSynthesisUtterance();
@@ -13,7 +13,7 @@ function behaviour() {
   imgTheme.classList.add("hidden");
   textTheme.classList.add("hidden");
   bodyEl.style.backgroundColor = "skyblue";
-  bodyEl.style.backgroundSize = "100% 100vh";
+  bodyEl.style.backgroundSize = "100% 90vh";
   msg.voice = voices[1];
   msg.volume = 1;
   msg.rate = 1;
@@ -22,7 +22,7 @@ function behaviour() {
   speechSynthesis.speak(msg);
 }
 
-function run(months) {
+function run() {
   const monthOfBirth = document
     .querySelector("#birthMonth")
     .value.toLowerCase();

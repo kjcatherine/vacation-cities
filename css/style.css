@@ -16,29 +16,36 @@
 .clear {
   clear: both;
 }
-
-/******************************************
-/* BASE STYLES
-/*******************************************/
+/* html {
+  font-size: 62.5%;
+} */
 
 body {
-  width: 100%;
-  max-height: 100%;
-  overflow: hidden;
-  text-align: center;
-  background-color: rgb(2, 2, 49);
-  position: absolute;
-  top: 15%;
-  bottom: 15%;
+  background-color: rgb(2, 2, 92);
   font-family: "Neuton", serif;
 }
-
-/******************************************
-/* LAYOUT
-/*******************************************/
-header {
+.sub-container {
+  text-align: center;
 }
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 90vh;
+  margin: 30px auto;
+  background: linear-gradient(
+    to top left,
+    rgb(2, 2, 49, 0.7),
+    rgb(102, 4, 102, 0.7),
+    rgb(114, 213, 213)
+  );
+  border-radius: 10px;
+}
+
 h1 {
+  /* position: relative;
+  top: 40px; */
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 2.3rem;
@@ -47,17 +54,17 @@ h1 {
 .wrap {
   display: flex;
   justify-content: center;
-  position: relative;
+  /* position: relative;
   left: 482px;
   right: 0;
-  top: 0.5rem;
-  width: 400px;
+  top: 0.5rem; */
+  width: 300px;
   height: 30px;
-  background-color: rgb(83, 83, 248);
+  background-color: rgb(184, 184, 203, 0.7);
   font-size: 1em;
-  border-radius: 0.2em;
+  border-radius: 0.3rem;
   color: white;
-  box-shadow: 0.1em 0.1em 0em rgb(57, 57, 163);
+  /* box-shadow: 0.1em 0.1em 0em rgb(57, 57, 163); */
   margin-right: 100px;
 }
 .fa-search {
@@ -65,13 +72,21 @@ h1 {
   position: relative;
   top: 7px;
 }
+.input-contain {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 20px;
+  left: 50px;
+}
 input {
   margin-left: 0.5em;
   margin-right: 0.5em;
   width: 100%;
   border: none;
+  border-radius: 0.3rem;
   outline: none;
-  background-color: rgb(83, 83, 248);
+  background-color: rgb(184, 184, 203, 0.7);
   color: white;
 }
 ::placeholder {
@@ -79,26 +94,50 @@ input {
 }
 
 a {
+  position: relative;
+  right: 90px;
   padding: 5px 50px;
   text-decoration: none;
   font-weight: 500;
   color: white;
-  background-color: rgb(2, 2, 92);
-  border-radius: 5px;
+  background-color: rgb(4, 67, 67, 0.6);
+  border-radius: 0.3rem;
   /*box-shadow: 5px rgb(149, 149, 167), -5px -5px rgb(83, 83, 248);*/
-  position: relative;
-  top: 30px;
+
   font-size: 1.2rem;
 }
 img {
-  width: 25rem;
+  width: 30rem;
+  height: 17rem;
+  border-radius: 10%;
 }
+
+.hidden {
+  display: none;
+}
+footer {
+  text-align: center;
+  color: rgb(222, 210, 210, 0.7);
+  position: relative;
+  bottom: 60px;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
 @media all and (max-width: 500px) {
   img {
-    width: 70%;
+    width: 80%;
+    height: 10rem;
+  }
+  .sub-container {
+    position: relative;
+    bottom: 40px;
   }
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 1.8rem;
   }
   .wrap {
@@ -109,40 +148,29 @@ img {
     padding: 0.4% 10%;
     font-size: 1rem;
   }
+  footer {
+    bottom: 100px;
+  }
 }
 @media (min-width: 501px) and (max-width: 800px) {
   img {
-    width: 55%;
+    width: 70%;
   }
   .wrap {
-    width: 55%;
-    left: 22%;
+    width: 70%;
+    left: 10px;
   }
-  body {
-    top: 10%;
-    bottom: 10%;
+  a {
+    padding: 0.4% 5%;
+    font-size: 1rem;
   }
 }
 @media (min-width: 801px) and (max-width: 1120px) {
-  img {
+  /* img {
     width: 40%;
   }
   .wrap {
     width: 40%;
     left: 30%;
-  }
-  body {
-    top: 10%;
-    bottom: 10%;
-  }
+  } */
 }
-
-.hidden {
-  display: none;
-}
-footer {
-}
-
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
