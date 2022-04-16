@@ -1,6 +1,6 @@
 # Vacation Cities app <br>
 ## How it's made <br>
- ** Tech used **: HTML, CSS, JavaScript. <br>
+ **Tech used** : HTML, CSS, JavaScript. <br>
 
 This project utilizes speech synthesis to predict user's next vacation destination based on thier month of birth.
 
