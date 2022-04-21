@@ -13,9 +13,10 @@ function behaviour() {
   imgTheme.classList.add("hidden");
   textTheme.classList.add("hidden");
   //document.querySelector("#birthMonth").value = "";
-  bodyEl.style.backgroundColor = "skyblue";
+  //bodyEl.style.backgroundColor = "skyblue";
   bodyEl.style.backgroundSize = "100% 90vh";
-  msg.voice = voices[1];
+  //msg.voice = voices[0];
+  msg.voice = voices.filter((voice) => voice.name == "Alex")[0];
   msg.volume = 1;
   msg.rate = 1;
   msg.pitch = 2;
@@ -77,6 +78,5 @@ function run() {
     behaviour();
   }
 }
-
-//let voices = window.speechSynthesis.getVoices();
-//console.log(voices);
+// let voice = window.speechSynthesis.getVoices();
+// console.log(voice);
