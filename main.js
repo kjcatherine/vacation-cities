@@ -12,6 +12,7 @@ document.querySelector("#btn").addEventListener("click", run);
 function behaviour() {
   imgTheme.classList.add("hidden");
   textTheme.classList.add("hidden");
+  //document.querySelector("#birthMonth").value = "";
   bodyEl.style.backgroundColor = "skyblue";
   bodyEl.style.backgroundSize = "100% 90vh";
   msg.voice = voices[1];
